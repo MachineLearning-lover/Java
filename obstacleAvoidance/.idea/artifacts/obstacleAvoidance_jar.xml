@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="obstacleAvoidance:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/obstacleAvoidance_jar</output-path>
+    <root id="archive" name="obstacleAvoidance.jar">
+      <element id="module-output" name="obstacleAvoidance" />
+      <element id="extracted-dir" path="D:/hipster-all-1.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

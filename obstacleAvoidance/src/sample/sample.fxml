@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="560.0">
+         <children>
+            <VBox layoutX="0.0" layoutY="0.0">
+               <children>
+                  <MenuBar>
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#onSave" text="Save" />
+                          </items>
+                          <items>
+                          <MenuItem mnemonicParsing="false" onAction="#onExit" text="Close" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                   <ToolBar>
+                        <ColorPicker fx:id="colorPicker" />
+                     <TextField fx:id="brushSize" text="10" />
+                     <CheckBox fx:id="eraser" mnemonicParsing="false" text="Eraser" />
+                     <Button fx:id="newPage" mnemonicParsing="false" onAction="#newPage" text="Clear Page" />
+
+                   </ToolBar>
+                  <Pane>
+                     <children>
+                        <Canvas fx:id="canvas" height="600.0" width="555.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="318.0">
+         <children>
+            <Button fx:id="generate" layoutX="56.0" layoutY="70.0" mnemonicParsing="false" onAction="#generatePath" text="GeneratePath" />
+            <TextField fx:id="startPointX" layoutX="24.0" layoutY="198.0" />
+            <TextField fx:id="startPointY" layoutX="24.0" layoutY="255.0" />
+            <TextField fx:id="endPointX" layoutX="24.0" layoutY="399.0" />
+            <TextField fx:id="endPointY" layoutX="24.0" layoutY="458.0" />
+            <Label layoutX="24.0" layoutY="159.0" text="Start Point" />
+            <Label layoutX="24.0" layoutY="361.0" text="End Point" />
+            <Label layoutX="7.0" layoutY="203.0" text="x" />
+            <Label layoutX="7.0" layoutY="260.0" prefHeight="21.0" prefWidth="18.0" text="y" />
+            <Label layoutX="7.0" layoutY="404.0" text="x" />
+            <Label layoutX="7.0" layoutY="463.0" text="y" />
+            <Button fx:id="setPosition" layoutX="61.0" layoutY="529.0" mnemonicParsing="false" onAction="#displayPositions" text="SetPositions" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
