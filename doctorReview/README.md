@@ -2,8 +2,8 @@
 
 Improve medical services by reviewing doctors :)
 
-# To Do
-## Backend
+## To Do
+#### Backend
 - [x] Database design
 - [x] Login/ Logout sessions
 - [x] User Registration
@@ -11,4 +11,5 @@ Improve medical services by reviewing doctors :)
 - [ ] Calendar sharing (clients see when the doctor is available)
 - [ ] Review process
 
-
+#### Frontend
+- [ ] Pages with Angular
