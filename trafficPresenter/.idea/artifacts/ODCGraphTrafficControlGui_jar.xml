@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ODCGraphTrafficControlGui:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ODCGraphTrafficControlGui_jar</output-path>
+    <root id="archive" name="ODCGraphTrafficControlGui.jar">
+      <element id="module-output" name="ODCGraphTrafficControlGui" />
+      <element id="extracted-dir" path="D:/guava-23.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
