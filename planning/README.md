@@ -1,8 +1,10 @@
 # Planning app
 
-I have a circular dependency, and i dont know how to get rid of it.
+This app is meant to help scrum masters in their daily activities.
 
-(Could not write JSON: Infinite recursion (StackOverflowError); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Infinite recursion (StackOverflowError) (through reference chain: java.util.ArrayList[0]->com.vmi.planning.Entities.Team["members"])])
+Facilities would be offered for:
+* calculating team capacity as well as CRUD operations on it
+* statistics w.r.t. sprints and iterations
 
 
 
