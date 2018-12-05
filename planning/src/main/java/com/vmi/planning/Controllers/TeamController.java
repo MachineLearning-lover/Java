@@ -3,7 +3,6 @@ package com.vmi.planning.Controllers;
 import com.vmi.planning.Dtos.TeamDto;
 import com.vmi.planning.Entities.Team;
 import com.vmi.planning.Services.TeamService;
-import com.vmi.planning.ServicesImpl.TeamServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -36,8 +35,6 @@ public class TeamController {
     public ResponseEntity renameTeam(@PathVariable("id") Long id, @RequestParam("newName") String newName){
         if (teamService.teamExists(id))
             teamService.renameTeam(id, newName);
-        else
-            return ResponseEntity.badRequest().build();
 
         return ResponseEntity.ok().build();
     }
@@ -46,8 +43,6 @@ public class TeamController {
     public ResponseEntity deleteTeam(@PathVariable("id") Long id){
         if (teamService.teamExists(id))
             teamService.deleteTeam(id);
-        else
-            return ResponseEntity.badRequest().build();
 
         return ResponseEntity.ok().build();
     }
@@ -58,8 +53,6 @@ public class TeamController {
                                                 @RequestParam("newDescription") String newDescription){
         if (teamService.teamExists(id))
             teamService.changeTeamDescription(id, newDescription);
-        else
-            return ResponseEntity.badRequest().build();
 
         return ResponseEntity.ok().build();
     }
@@ -69,8 +62,6 @@ public class TeamController {
         if (teamService.teamExists(teamId)){
             teamService.addUserToTeam(teamId, userId);
         }
-        else
-            return ResponseEntity.badRequest().build();
 
         return ResponseEntity.ok().build();
     }
@@ -80,8 +71,6 @@ public class TeamController {
         if (teamService.teamExists(teamId)){
             teamService.removeUserFromTeam(teamId, userId);
         }
-        else
-            return ResponseEntity.badRequest().build();
 
         return ResponseEntity.ok().build();
     }

@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-import java.util.List;
-
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @RestController
@@ -58,7 +56,7 @@ public class UserController {
     }
 
     @RequestMapping(value="/deleteRole", method = DELETE)
-    public ResponseEntity deleteRole(@PathVariable("userId") Long userId ,@PathVariable("roleId") Long roleId){
+    public ResponseEntity deleteRole(@RequestParam("userId") Long userId ,@RequestParam("roleId") Long roleId){
         if (userService.userHasRole(userId, roleId))
         {
             userService.deleteRole(userId, roleId);
@@ -68,7 +66,7 @@ public class UserController {
     }
 
     @RequestMapping(value="/addCapacity", method = POST)
-    public ResponseEntity addCapacity(@PathVariable("userId") Long userId ,@PathVariable("capacityId") Long capacityId){
+    public ResponseEntity addCapacity(@RequestParam("userId") Long userId ,@RequestParam("capacityId") Long capacityId){
         if (userService.userExists(userId))
         {
             userService.addCapacity(userId, capacityId);
@@ -78,7 +76,7 @@ public class UserController {
     }
 
     @RequestMapping(value="/deleteCapacity", method = DELETE)
-    public ResponseEntity deleteCapacity(@PathVariable("userId") Long userId ,@PathVariable("capacityId") Long capacityId){
+    public ResponseEntity deleteCapacity(@RequestParam("userId") Long userId ,@RequestParam("capacityId") Long capacityId){
         if (userService.userExists(userId))
         {
             userService.deleteCapacity(userId, capacityId);

@@ -2,6 +2,7 @@ package com.vmi.planning.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.vmi.planning.Dtos.CapacityDto;
 import lombok.*;
 
 import javax.persistence.*;
@@ -43,6 +44,15 @@ public class Capacity {
 
     @ManyToMany(fetch = LAZY, cascade = {PERSIST, MERGE}, mappedBy = "capacities")
     private Set<Team> teams = new HashSet<>();
+
+    public Capacity(CapacityDto capacityDto) {
+        startDate = capacityDto.getStartDate();
+        endDate = capacityDto.getEndDate();
+        daysOff = capacityDto.getDaysOff();
+        contentbox = capacityDto.getContentbox();
+        timebox = capacityDto.getTimebox();
+    }
+
 
     @Override
     public String toString() {
