@@ -110,8 +110,8 @@ public class UserController {
 
     @RequestMapping(value="/getAllUsers", method = GET)
     @ResponseBody
-    public List<User> getAllUsers(){
-        return userService.getAllUsers();//ResponseEntity.ok(userService.getAllUsers());
+    public ResponseEntity getAllUsers(){
+        return ResponseEntity.ok(userService.getAllUsers());
     }
 
 }

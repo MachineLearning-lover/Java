@@ -3,10 +3,7 @@ package com.vmi.planning.Entities;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.vmi.planning.Dtos.TeamDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -19,10 +16,11 @@ import static javax.persistence.CascadeType.PERSIST;
 import static javax.persistence.FetchType.LAZY;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
+@Setter
 @JsonIdentityInfo(generator=ObjectIdGenerators.UUIDGenerator.class, property="@id")
 public class Team {
 
@@ -61,10 +59,9 @@ public class Team {
     public String toString() {
         return "Team{" +
                 "id=" + id +
-                ", details=" + details.toString() +
-                ", capacities=" + capacities.toString() +
+                ", details=" + details +
+                ", members=" + members +
+                ", capacities=" + capacities +
                 '}';
     }
-
-
 }

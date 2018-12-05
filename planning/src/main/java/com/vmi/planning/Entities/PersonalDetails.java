@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Embeddable;
-import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 
 @Embeddable
 @Data
@@ -15,7 +15,7 @@ import javax.validation.constraints.Min;
 @Builder
 public class PersonalDetails {
 
-    @Min(6)
+    @Size(min = 6)
     private String email;
 
     private String username;

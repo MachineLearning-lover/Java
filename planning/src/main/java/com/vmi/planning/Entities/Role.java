@@ -1,10 +1,7 @@
 package com.vmi.planning.Entities;
 
 import com.vmi.planning.Dtos.RoleDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,10 +13,11 @@ import javax.validation.constraints.Size;
 import static com.google.common.base.Strings.nullToEmpty;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
+@Setter
 public class Role {
 
     @Id
@@ -36,5 +34,14 @@ public class Role {
     public Role(RoleDto roleDto) {
         name = nullToEmpty(roleDto.getName());
         description = nullToEmpty(roleDto.getDescription());
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

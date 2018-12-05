@@ -3,15 +3,11 @@ package com.vmi.planning.Entities;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.vmi.planning.Dtos.UserDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.nullToEmpty;
@@ -21,10 +17,11 @@ import static javax.persistence.FetchType.EAGER;
 import static javax.persistence.FetchType.LAZY;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
+@Setter
 @JsonIdentityInfo(generator=ObjectIdGenerators.UUIDGenerator.class, property="@id")
 public class User {
 
@@ -65,8 +62,8 @@ public class User {
                 "id=" + id +
                 ", details=" + details +
                 ", roles=" + roles +
-                ", teams=" + teams.toString() +
                 ", capacities=" + capacities +
                 '}';
     }
+
 }

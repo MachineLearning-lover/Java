@@ -1,12 +1,8 @@
 package com.vmi.planning.Entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -17,10 +13,11 @@ import static javax.persistence.CascadeType.MERGE;
 import static javax.persistence.CascadeType.PERSIST;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
+@Setter
 @JsonIdentityInfo(generator=ObjectIdGenerators.UUIDGenerator.class, property="@id")
 public class Iteration {
 
@@ -38,4 +35,15 @@ public class Iteration {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {PERSIST, MERGE})
     private Set<Sprint> sprints = new HashSet<>();
+
+    @Override
+    public String toString() {
+        return "Iteration{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", startIteration=" + startIteration +
+                ", endIteration=" + endIteration +
+                ", sprints=" + sprints +
+                '}';
+    }
 }
