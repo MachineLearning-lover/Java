@@ -1,5 +1,5 @@
 # Tefnut
 
-This helps you to log thing encrypted using a symmetric key (AES)
+This helps you to log things using a symmetric key (AES)
 
 
