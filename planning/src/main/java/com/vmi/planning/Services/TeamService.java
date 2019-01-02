@@ -16,4 +16,5 @@ public interface TeamService {
     void removeUserFromTeam(Long teamId, Long userId);
     List<Team> getAllTeams();
     boolean teamExists(Long teamId);
+    List<User> getTeamMembers(Long teamId);
 }

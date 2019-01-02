@@ -74,4 +74,9 @@ public class TeamController {
 
         return ResponseEntity.ok().build();
     }
+
+    @RequestMapping(value = "/getMemebers/{teamId}", method = GET)
+    public ResponseEntity getUsersFromTeam(@PathVariable("teamId") Long teamId){
+        return ResponseEntity.ok(teamService.getTeamMembers(teamId));
+    }
 }

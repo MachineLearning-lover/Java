@@ -8,6 +8,7 @@ import com.vmi.planning.Services.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -60,8 +61,6 @@ public class TeamServiceImpl implements TeamService {
             if (user.isPresent()) {
                 team.get().getMembers().add(user.get());
                 teamRepository.save(team.get());
-//                user.get().getTeams().add(team.get());
-//                userRepository.save(user.get());
             }
         }
     }
@@ -86,5 +85,13 @@ public class TeamServiceImpl implements TeamService {
     @Override
     public boolean teamExists(Long teamId) {
         return teamRepository.findById(teamId).isPresent();
+    }
+
+    @Override
+    public List<User> getTeamMembers(Long teamId) {
+        if (teamExists(teamId)) {
+            throw new RuntimeException("No team foumnd");
+        }
+        return new ArrayList<>(teamRepository.findById(teamId).get().getMembers());
     }
 }
