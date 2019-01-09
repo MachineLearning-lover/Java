@@ -51,11 +51,9 @@ public class InfoPointTest {
 
         List<InfoPoint> infoPoints = new ArrayList<>();
 
-        infoPoints.add(new InfoPoint.InfoBuilder().addPayloads(payloads1).addResult(falseResult).build());
         infoPoints.add(new InfoPoint.InfoBuilder().addPayloads(payloads1).addResult(trueResult).build());
-        infoPoints.add(new InfoPoint.InfoBuilder().addPayloads(payloads2).addResult(falseResult).build());
         infoPoints.add( new InfoPoint.InfoBuilder().addPayloads(payloads2).addResult(trueResult).build());
-        infoPoints.add( new InfoPoint.InfoBuilder().addPayloads(payloads3).addResult(falseResult).build());
+        infoPoints.add( new InfoPoint.InfoBuilder().addPayloads(payloads3).addResult(trueResult).build());
 
         for(InfoPoint info : infoPoints){
             logger.info(info.encode());
