@@ -29,12 +29,24 @@ public class InfoDecoderTest {
     }
 
     @Test
-    public void test_decode_correctly_erroneous_state(){
+    public void test_decode_correctly_erroneous_state_with_one_graph(){
         InfoDecoder infoDecoder = new InfoDecoder();
         infoDecoder.setMap(currentPath+"\\map.txt");
-        List<String> results = infoDecoder.interpret(currentPath + "\\logs.txt");
+        List<String> results = infoDecoder.interpret(currentPath + "\\logs1.txt");
         assertEquals(false, results.isEmpty());
         System.out.println(results);
+        assertEquals(1, results.size());
+
+    }
+
+    @Test
+    public void test_decode_correctly_erroneous_state_with_two_graphs(){
+        InfoDecoder infoDecoder = new InfoDecoder();
+        infoDecoder.setMap(currentPath+"\\map.txt");
+        List<String> results = infoDecoder.interpret(currentPath + "\\logs2.txt");
+        assertEquals(false, results.isEmpty());
+        System.out.println(results);
+        assertEquals(2, results.size());
 
     }
 
