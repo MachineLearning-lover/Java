@@ -1,15 +1,15 @@
 import com.google.common.graph.MutableValueGraph;
 import com.google.common.graph.ValueGraphBuilder;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
@@ -33,8 +33,6 @@ public class InfoDecoder {
                 successorNode.clear();
             }
 
-        } catch (FileNotFoundException e) {
-            logger.log(Level.ALL, e.fillInStackTrace().toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -83,7 +81,7 @@ public class InfoDecoder {
         }
     }
 
-    private boolean valid(String line){
+    private static boolean valid(String line){
         String INFO = "INFO:";
         String DEBUG = "DEBUG:";
         String[] splitLine = line.trim().split(" ");
@@ -112,12 +110,40 @@ public class InfoDecoder {
         return map;
     }
 
-    private String getState(String content) throws Exception {
+    private static String getState(String content) throws Exception {
         String[] splited;
         splited = content.split(" ");
         String decoded = InfoPoint.decode(splited[1]);
         splited = decoded.split(",");
         return splited[0];
+    }
+
+    public static void generateMap(String outputFileName, String inputFile) throws Exception {
+        Path file = Paths.get(inputFile);
+        List<String> fileContent = Files.readAllLines(file);
+        List<String> nodes = new ArrayList<>();
+        for (String line : fileContent){
+            if (valid(line)){
+                nodes.add(getState(line));
+            }
+        }
+
+        List<String> outputLines = new ArrayList<>();
+
+        for (int i = 1; i < nodes.size(); i++) {
+            String string = nodes.get(i - 1) +
+                    "," +
+                    nodes.get(i) +
+                    "," ;
+            outputLines.add(string);
+        }
+
+        Files.write(Paths.get(outputFileName),
+                outputLines,
+                StandardCharsets.UTF_8,
+                StandardOpenOption.CREATE,
+                StandardOpenOption.WRITE);
+
     }
 
 }
