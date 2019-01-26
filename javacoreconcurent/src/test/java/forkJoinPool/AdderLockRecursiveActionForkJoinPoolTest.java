@@ -13,7 +13,7 @@ import java.util.concurrent.ForkJoinPool;
 import static java.util.stream.Collectors.toList;
 
 @RunWith(JUnit4.class)
-public class AdderRecursiveActionForkJoinPoolTest {
+public class AdderLockRecursiveActionForkJoinPoolTest {
 
     @Test
     public void test_adder_fork_join_pool(){
