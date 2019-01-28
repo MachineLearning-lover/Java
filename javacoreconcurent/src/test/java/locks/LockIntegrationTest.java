@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
-public class AdderLockTest {
+public class LockIntegrationTest {
 
 
     @Test
@@ -26,6 +26,14 @@ public class AdderLockTest {
         IntStream.range(0,1_000).forEach(count -> executorService.submit(adderLock));
         executorService.awaitTermination(100, TimeUnit.MILLISECONDS);
         assertEquals(1_000, adderLock.getCounter().intValue());
+    }
+
+    @Test
+    public void test_array_read_write() throws InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+        ReadWriteArrayLock readWriteArrayLock = new ReadWriteArrayLock();
+        IntStream.range(0,10).forEach(count -> executorService.submit(readWriteArrayLock));
+        executorService.awaitTermination(100, TimeUnit.MILLISECONDS);
     }
 
 }
