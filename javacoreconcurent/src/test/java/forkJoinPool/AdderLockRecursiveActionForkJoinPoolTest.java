@@ -20,7 +20,7 @@ public class AdderLockRecursiveActionForkJoinPoolTest {
         Random random = new Random();
 
         List<Long> data = random
-                .longs(100_000_000, 1, 5)
+                .longs(100_000, 1, 5)
                 .boxed()
                 .collect(toList());
 
