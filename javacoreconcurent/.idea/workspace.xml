@@ -28,16 +28,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdderRecursiveAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/forkJoinPool/AdderRecursiveAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdderLockRecursiveActionForkJoinPoolTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/forkJoinPool/AdderLockRecursiveActionForkJoinPoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnumTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EnumTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/enums/EnumTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
@@ -92,31 +82,47 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="StreamTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/streams/StreamTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VarHandle.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/invoke/VarHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="440" column="22" lean-forward="false" selection-start-line="440" selection-start-column="22" selection-end-line="440" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/function/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1029">
               <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdderRecursiveTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/forkJoinPool/AdderRecursiveTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompletableFuture.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45402">
-              <caret line="2232" column="36" lean-forward="false" selection-start-line="2232" selection-start-column="36" selection-end-line="2232" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -176,6 +182,7 @@
         <option value="$PROJECT_DIR$/src/test/java/enums/PriceService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/enums/EnumTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/streams/StreamTests.java" />
       </list>
     </option>
   </component>
@@ -255,23 +262,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java-core-concurent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javacoreconcurent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-core-concurent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javacoreconcurent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-              <item name="EnumTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -308,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnumTest.test">
+  <component name="RunManager" selected="JUnit.StreamTests.stream_sources">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -398,31 +388,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CompletableFutureTest.completeOnTimeout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="completableFuture.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="java-core-concurent" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="completableFuture" />
-      <option name="MAIN_CLASS_NAME" value="completableFuture.CompletableFutureTest" />
-      <option name="METHOD_NAME" value="completeOnTimeout" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="EnumTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -436,6 +401,31 @@
       <option name="PACKAGE_NAME" value="enums" />
       <option name="MAIN_CLASS_NAME" value="enums.EnumTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="StreamTests.stream_sources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-core-concurent" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="streams" />
+      <option name="MAIN_CLASS_NAME" value="streams.StreamTests" />
+      <option name="METHOD_NAME" value="stream_sources" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -509,19 +499,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.completeOnTimeout" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.combine" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AdderLockRecursiveActionForkJoinPoolTest.test_adder_fork_join_pool" />
-      <item index="3" class="java.lang.String" itemvalue="Application.EnumTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EnumTest.test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.combine" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AdderLockRecursiveActionForkJoinPoolTest.test_adder_fork_join_pool" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EnumTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EnumTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StreamTests.stream_sources" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EnumTest.test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.EnumTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AdderLockRecursiveActionForkJoinPoolTest.test_adder_fork_join_pool" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.combine" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.completeOnTimeout" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StreamTests.stream_sources" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EnumTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EnumTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AdderLockRecursiveActionForkJoinPoolTest.test_adder_fork_join_pool" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CompletableFutureTest.combine" />
       </list>
     </recent_temporary>
   </component>
@@ -540,48 +530,47 @@
       <updated>1548441693217</updated>
       <workItem from="1548441696254" duration="11693000" />
       <workItem from="1548693465323" duration="10842000" />
-      <workItem from="1549194178456" duration="995000" />
+      <workItem from="1549194178456" duration="7348000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompletableFutureTest_combine - 2019.01.30 at 20h 15m 51s.xml">
-      <configuration name="CompletableFutureTest.combine" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 06m 41s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureTest_completeOnTimeout - 2019.01.30 at 20h 05m 13s.xml">
-      <configuration name="CompletableFutureTest.completeOnTimeout" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 07m 04s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureTest_completeOnTimeout - 2019.01.30 at 20h 05m 29s.xml">
-      <configuration name="CompletableFutureTest.completeOnTimeout" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 07m 18s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureTest_createPipeline - 2019.01.30 at 19h 37m 28s.xml">
-      <configuration name="CompletableFutureTest.createPipeline" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 08m 19s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureTest_exception - 2019.01.30 at 19h 57m 44s.xml">
-      <configuration name="CompletableFutureTest.exception" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 10m 41s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnumTest_test - 2019.02.03 at 13h 22m 31s.xml">
-      <configuration name="EnumTest.test" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 23m 04s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnumTest_test - 2019.02.03 at 13h 22m 57s.xml">
-      <configuration name="EnumTest.test" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 36m 01s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnumTest_test - 2019.02.03 at 13h 28m 41s.xml">
-      <configuration name="EnumTest.test" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 36m 29s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnumTest_test - 2019.02.03 at 13h 47m 57s.xml">
-      <configuration name="EnumTest.test" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 40m 05s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnumTest_test - 2019.02.03 at 13h 49m 24s.xml">
-      <configuration name="EnumTest.test" configurationId="JUnit" />
+    <history-entry file="StreamTests_stream_sources - 2019.02.04 at 21h 47m 05s.xml">
+      <configuration name="StreamTests.stream_sources" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23530000" />
+    <option name="totallyTimeSpent" value="29883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="-10" width="1940" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,9 +580,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3423729" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3423729" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1039,14 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/completableFuture/CompletableFutureTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1087,6 +1068,55 @@
             <element signature="e#1078#1079#0" expanded="true" />
             <element signature="e#1136#1137#0" expanded="true" />
             <element signature="e#1191#1192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="404" column="23" lean-forward="false" selection-start-line="404" selection-start-column="23" selection-end-line="404" selection-end-column="23" />
+          <folding>
+            <element signature="e#41130#41131#0" expanded="false" />
+            <element signature="e#41185#41186#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="959" column="13" lean-forward="false" selection-start-line="959" selection-start-column="13" selection-end-line="959" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/invoke/VarHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="440" column="22" lean-forward="false" selection-start-line="440" selection-start-column="22" selection-end-line="440" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/streams/StreamTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
           </folding>
         </state>
       </provider>
